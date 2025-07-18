@@ -14,7 +14,6 @@ const AstronautForm = () => {
     cep: '',
     numeroDaCasa: '',
     cpf: '',
-    planeta: '',
     aceitaRiscos: false,
     plenaSaude: false,
   });
