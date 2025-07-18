@@ -1,0 +1,233 @@
+
+body {
+  margin: 0;
+  font-family: Inter; 
+  background-color: #f0f0f0;
+}
+
+.pag {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.cabecalho {
+  background-color: #222; 
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.cabecalho p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.cabecalho p span {
+  margin-left: 10px;
+}
+
+.destaque {
+  display: flex;
+  background-color: #fff; 
+  margin: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.destaque img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+}
+
+.destaque .texto {
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.destaque h2 {
+  color: #333;
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.destaque p {
+  color: #000000;
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.destaque button {
+  background-color: #28a745; 
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+}
+
+.destaque button:hover {
+  background-color: #957E7E;
+}
+
+.cardapio {
+  background-color: #8B4513;
+  color: #fff;
+  padding: 40px 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.cardapio h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+}
+
+.cardapio h2::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: #fff;
+}
+
+.item-cardapio {
+  display: flex;
+  background-color: #f8f8f8; 
+  margin-bottom: 25px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  text-align: left;
+}
+
+.item-cardapio:last-child {
+  margin-bottom: 0;
+}
+
+.item-cardapio img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 50px;
+}
+
+.item-cardapio div {
+  flex-grow: 1;
+}
+
+.item-cardapio h3 {
+  color: #000000;
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.item-cardapio p {
+  color: #000000;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .destaque {
+    flex-direction: column;
+  }
+
+  .destaque img,
+  .destaque .texto {
+    width: 100%;
+  }
+
+  .destaque .texto {
+    padding: 20px;
+  }
+
+  .destaque h2 {
+    font-size: 1.8em;
+  }
+
+  .destaque p {
+    font-size: 1em;
+  }
+
+  .cardapio h2 {
+    font-size: 2em;
+  }
+
+  .item-cardapio {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .item-cardapio img {
+    margin-right: 0;
+    margin-bottom: 15px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .cabecalho {
+    font-size: 1.2em;
+    padding: 10px 15px;
+  }
+
+  .destaque {
+    margin: 10px;
+  }
+
+  .destaque h2 {
+    font-size: 1.5em;
+  }
+
+  .destaque button {
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+
+  .cardapio {
+    margin: 10px;
+    padding: 30px 15px;
+  }
+
+  .cardapio h2 {
+    font-size: 1.8em;
+  }
+
+  .item-cardapio {
+    padding: 10px;
+  }
+
+  .item-cardapio h3 {
+    font-size: 1.3em;
+  }
+
+  .item-cardapio p {
+    font-size: 0.9em;
+  }
+}
