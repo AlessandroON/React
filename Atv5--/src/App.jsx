@@ -1,5 +1,6 @@
 import Home from "./pages/Home.jsx";
 import Items from "./pages/Items.jsx";
+import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {

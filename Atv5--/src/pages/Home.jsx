@@ -16,19 +16,27 @@ const items = [
     title: "Superman",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfFWwoCfxB2LkqeTklokw_S4umZeFPHMGy4w&s",
   },
-
+  {
+    id: 4,
+    title: "Como Treinar o Seu Dragão",
+    image: "https://image.tmdb.org/t/p/w500/1azTyARpXTtspi28K9rcMIDaHFB.jpg",
+  },
+  {
+    id: 5,
+    title: "Dexter: Ressurreição",
+    image: "https://image.tmdb.org/t/p/w500/wG6GBTreXHoBhxsFY4vVSQtYey5.jpg",
+  }
 
 ];
 
 export default function Home() {
   return (
-    <div>
-      <h1>Catálogo de Filmes</h1>
-      <div style={{ display: "flex", gap: "50px" }}>
-
+    <div className="home">
+      <h1 className="titulo">Lançamentos PatatiFlix </h1>
+      <div className="card-container">
         {items.map((item) => (
-          <Card key={item.id} {...item} />))}
-
+          <Card key={item.id} {...item} />
+        ))}
       </div>
     </div>
   );
