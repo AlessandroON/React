@@ -16,9 +16,9 @@ function App() {
       <footer>
         <p>🔗 Redes Sociais:</p>
         <ul>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">X (Twitter)</a></li>
-          <li><a href="#">Facebook</a></li>
+          <li><a href="https://www.instagram.com/aleoliverr1/?next=%2F">Instagram</a></li>
+          <li><a href="https://x.com/LeoMadoushi">X(Twitter)</a></li>
+          <li><a href="https://www.facebook.com/AlessandrooOliveiraaa/">Facebook</a></li>
         </ul>
       </footer>
     </div>
