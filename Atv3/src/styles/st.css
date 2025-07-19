@@ -1,0 +1,63 @@
+/* Container principal do card */
+.card {
+  border-radius: 12px;
+  padding: 16px;
+  margin: 12px;
+  text-align: center;
+  width: 180px;
+  transition: transform 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f0f0f0; /* fallback */
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+/* Nome do pokémon */
+.name {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+/* Tipos em forma de "pílula" */
+.types {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.pill {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Cores das pílulas e também para o fundo do card (mais claro) */
+.normal   { background-color: #ffffff; }
+.fire     { background-color: #eb9321; }
+.water    { background-color: #54a4eb; }
+.electric { background-color: #a750f8; color: #333; }
+.grass    { background-color: #5cfc7f; }
+.ice      { background-color: #7be2f7; color: #333; }
+.fighting { background-color: #e4f361; }
+.poison   { background-color: #f85ec5; }
+.ground   { background-color: #f9f1dc; color: #333; }
+.flying   { background-color: #ede9ff; }
+.psychic  { background-color: #ffe0ed; }
+.bug      { background-color: #f0f8da; }
+.rock     { background-color: #ffffff; color: #333; }
+.ghost    { background-color: #f7e6e6; }
+.dragon   { background-color: #e3ddfc; }
+.dark     { background-color: #5e615e; }
+.steel    { background-color: #f1f1f3; color: #333; }
+.fairy    { background-color: #ffe8f5; }
