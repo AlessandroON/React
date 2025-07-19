@@ -1,4 +1,4 @@
-/* Container principal do card */
+
 .card {
   border-radius: 12px;
   padding: 16px;
@@ -14,7 +14,6 @@
   transform: scale(1.03);
 }
 
-/* Nome do pokémon */
 .name {
   font-size: 18px;
   font-weight: bold;
@@ -23,7 +22,6 @@
   color: #222;
 }
 
-/* Tipos em forma de "pílula" */
 .types {
   display: flex;
   justify-content: center;
@@ -42,7 +40,6 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-/* Cores das pílulas e também para o fundo do card (mais claro) */
 .normal   { background-color: #ffffff; }
 .fire     { background-color: #eb9321; }
 .water    { background-color: #54a4eb; }
